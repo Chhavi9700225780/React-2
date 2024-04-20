@@ -1,2 +1,59 @@
 
+ /* write your css here */
+ .container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #344151;
+    flex-direction: column;
+    gap:10;
+ }
+ .text{
+    color:#0398d4;
+    font-style: medium;
+    font-size: 2rem;
+ }
+ .con{
+    background-color: white;
+    justify-content: center;
+    gap:12;
+    font-size:25px;
+    display: flex;
+    color:#344151;
+    padding:3px;
+    border-radius:2px;
+    width:5em;
+    margin-top:0.8em;
+ }
  
+ .border{
+    border-radius:2px;
+   position:relative;
+    width: 20px;
+    background-color: white;
+    border:white;
+    font-size:25px;
+    margin-right:7px;
+    
+
+ }
+ .pos1{
+left:-0.6em;
+ }
+ .pos2{
+    right:-0.6em;
+     }
+     /*bg-[#0398d4] text-white px-5 py-2 rounded-sm text-lg capitalize">reset</button>
+     </div>*/
+     .bg{
+        margin-top: 2em;
+        background-color:#0398d4 ;
+        color:white;
+        padding:5px 2px;
+        border:none;
+        border-radius: 2px;
+        text-transform:capitalize ;
+        width:6em;
+     }
+   
