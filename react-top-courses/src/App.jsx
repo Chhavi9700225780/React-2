@@ -7,7 +7,7 @@ import Navbar from "./Components/Navbar";
 import Filter from "./Components/Filter";
 import Cards from "./Components/Cards";
 import Spinner from "./Components/Spinner";
-import { apiUrl, filterData } from "./data.jsx";
+import { apiUrl, filterData } from "./data.js";
 import { toast } from "react-toastify";
 import { useEffect, useState } from "react";
 
@@ -25,8 +25,10 @@ const App = () => {
 
       // Save data
       setCourses(output.data);
-      // setCourses(output);
+      console.log(output);
+      //setCourses(output);
     } catch (err) {
+      console.log("Error");
       toast.error("Something Went Wrong");
     }
     setLoading(false);
