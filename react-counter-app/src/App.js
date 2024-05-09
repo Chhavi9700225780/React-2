@@ -12,7 +12,7 @@ function App() {
     setCounter(counter + 1);
   }
 
-  const resetHandler = () => {
+  const resetHandler = () => { 
     setCounter(0);
   }
   return (

@@ -12,15 +12,20 @@ const Cards = (props) => {
     // It Returns list of all courses received from the api Response
 
      const getCourses = () => {
+        if (category === "All"){
         Object.values(props.courses).forEach((courseCategory) => {
             courseCategory.forEach((course) => {
                allCourse.push(course);
            });
        });
        return allCourse;
-    };
-/*
-    const ans = function getCourses(){
+    } 
+    else{
+        return props.courses[category];
+    }
+}; 
+
+       /* function getCourses(){
         if (category === "All") {
             let allCourses = [];
             Object.values(props.courses).forEach((array) => {
@@ -36,12 +41,12 @@ const Cards = (props) => {
         }
     }*/
 
-    //   console.log(allCourse);
+    // console.log(allCourse);
     return (
         <div className="flex flex-wrap justify-center gap-4 mb-4">
             {
-               getCourses().map((course) => {
-                    return <Card course= {course} key={props.courses.id} likedCourses={likedCourses} setLikedCourses={setLikedCourses} />;
+              getCourses().map((course) => {
+                    return (<Card course= {course} key={props.courses.id} likedCourses={likedCourses} setLikedCourses={setLikedCourses}/>);
                 })
             }
         </div>
