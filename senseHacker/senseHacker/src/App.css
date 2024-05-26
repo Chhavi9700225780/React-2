@@ -1,0 +1,24 @@
+
+@font-face {
+    font-family: myfont;
+    src: url(ARCADECLASSIC.TTF);
+}
+.spider2{
+    word-spacing: 5px;
+}
+.spider{
+    font-family: myfont;
+}
+.ping{
+    animation: buttonPulse .3s infinite ease-in-out ;
+}
+@keyframes buttonPulse {
+     50%{
+        transform: scale(1.02);
+     }
+}
+.pop:hover{
+    box-shadow: 0 0 1rem #e83e8d;
+    transition: .2s ease;
+}
+
